@@ -1,6 +1,7 @@
 #!/bin/sh
 
 rustc --version || curl https://sh.rustup.rs -sSf | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && source $HOME/.cargo/env
 NEXUS_HOME=$HOME/.nexus
 GREEN='\033[1;32m'
 ORANGE='\033[1;33m'
