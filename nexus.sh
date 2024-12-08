@@ -1,7 +1,4 @@
 #!/bin/sh
-curl -s https://raw.githubusercontent.com/arun993/mylogo/refs/heads/main/logo.sh | bash
-
-sleep 3
 
 rustc --version || curl https://sh.rustup.rs -sSf | sh
 NEXUS_HOME=$HOME/.nexus
