@@ -5,7 +5,14 @@ NEXUS_HOME=$HOME/.nexus
 GREEN='\033[1;32m'
 ORANGE='\033[1;33m'
 NC='\033[0m' # No Color
-mkdir -p $HOME/.nexus
+
+# Check if .nexus directory exists; if not, create it
+if [ ! -d "$NEXUS_HOME" ]; then
+    mkdir -p "$NEXUS_HOME"
+    echo "${GREEN}Created directory: $NEXUS_HOME${NC}"
+else
+    echo "${ORANGE}Directory $NEXUS_HOME already exists. Skipping creation.${NC}"
+fi
 
 while [ -z "$NONINTERACTIVE" ] && [ ! -f "$NEXUS_HOME/prover-id" ]; do
     read -p "Do you agree to the Nexus Beta Terms of Use (https://nexus.xyz/terms-of-use)? (Y/n) " yn </dev/tty
