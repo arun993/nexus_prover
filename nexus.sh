@@ -1,5 +1,10 @@
 #!/bin/sh
 
+
+curl -s https://raw.githubusercontent.com/arun993/mylogo/refs/heads/main/logo.sh | bash
+
+sleep 3
+
 rustc --version || curl https://sh.rustup.rs -sSf | sh
 NEXUS_HOME=$HOME/.nexus
 GREEN='\033[1;32m'
@@ -37,7 +42,7 @@ if [ -z "$NONINTERACTIVE" ] && [ "${#PROVER_ID}" -ne "28" ]; then
     echo "\t1. Go to ${GREEN}https://beta.nexus.xyz${NC}"
     echo "\t2. On the bottom left hand corner, copy the ${ORANGE}prover id${NC}"
     echo "\t3. Paste the ${ORANGE}prover id${NC} here. Press Enter to continue.\n"
-    read -p "Enter your Prover Id (optional)> " PROVER_ID </dev/tty
+    read -p "Please Enter your 28 digit Prover Id > " PROVER_ID </dev/tty
     while [ ! ${#PROVER_ID} -eq "0" ]; do
         if [ ${#PROVER_ID} -eq "28" ]; then
             if [ -f "$NEXUS_HOME/prover-id" ]; then
