@@ -23,5 +23,5 @@ OR
 3. Press ```Ctrl+A+D``` To exit and don't press ctrl+C ❌
 4. You can check logs by connecting screen again ``` screen -r nexus``` 
 
-Thanks !!
+:) Follow me on X for more guides : https://x.com/Arun__993  Thanks !!
 
