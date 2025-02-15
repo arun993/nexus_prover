@@ -1,11 +1,16 @@
 #!/bin/sh
 
 
-curl -s https://raw.githubusercontent.com/arun993/mylogo/refs/heads/main/logo.sh | bash
+curl -s https://raw.githubusercontent.com/arun993/arun993/refs/heads/main/mylogo.sh | bash
 
 sleep 3
 
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y build-essential pkg-config libssl-dev git-all
+sudo apt install -y protobuf-compiler
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && source $HOME/.cargo/env
 rustc --version || curl https://sh.rustup.rs -sSf | sh
+
 NEXUS_HOME=$HOME/.nexus
 GREEN='\033[1;32m'
 ORANGE='\033[1;33m'
