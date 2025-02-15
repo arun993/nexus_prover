@@ -20,7 +20,8 @@ OR
 ```
 **It can take upto 15 Minutes to start till than grab a coffee!
 
-3. Press ```Ctrl+A+D``` To exit and don't press ctrl+X ❌
+3. Press ```Ctrl+A+D``` To exit and don't press ctrl+C ❌
+4. You can check logs by connecting screen again ``` screen -r nexus``` 
 
 Thanks !!
 
