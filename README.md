@@ -14,7 +14,7 @@ sudo apt update && sudo apt install screen -y && screen -S nexus
 ```
 [ -f "nexus.sh" ] && rm nexus.sh; wget -q https://raw.githubusercontent.com/arun993/nexus_prover/refs/heads/main/Nexus.sh && chmod +x Nexus.sh && ./Nexus.sh
 ```
-                                                              OR
+ OR           
 ```
 [ -f "nexus.sh" ] && rm nexus.sh; curl -sSf https://raw.githubusercontent.com/arun993/nexus_prover/refs/heads/main/Nexus.sh -o Nexus.sh && chmod +x Nexus.sh && ./Nexus.sh
 ```
