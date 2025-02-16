@@ -1,7 +1,7 @@
-# ⚡️Simple Guided to Run Nexus Prover CLI (Testnet 2)  ⚡️
+# ⚡️Simple Guide to Run Nexus Prover CLI (Testnet 2)  ⚡️
 
-### Pre requirements 
-1. Any ubuntu terminal (VPS / Wsl)
+### Some Basic requirements 
+1. You need an Ubuntu VPS or Wsl (I recommand VPS)
 2. There is no min. system requiremet but i recommand 4GB RAM and 4 cores CPU (The higher your speces the more points you will get per second)
 3. Extract your Nexus Prover ID
 
