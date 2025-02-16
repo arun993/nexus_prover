@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-curl -s https://raw.githubusercontent.com/arun993/arun993/refs/heads/main/mylogo.sh | bash
+curl -s https://raw.githubusercontent.com/arun993/nexus_prover/refs/heads/main/logo.sh | bash
 
 sleep 3
 
