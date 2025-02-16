@@ -26,8 +26,6 @@ echo -e "${RESET}"
 
 # Print additional centered text with red bold styling
 echo -e "${RED}${BOLD}"
-center_text "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-center_text "Follow me on X/Twitter : https://x.com/Arun__993 "
-center_text "Github : https://github.com/arun993 "
-center_text "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "Follow me on X/Twitter : https://x.com/Arun__993 "
+echo "Github : https://github.com/arun993 "
 echo -e "${RESET}"
