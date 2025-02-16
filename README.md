@@ -1,4 +1,4 @@
-# ⚡️ Run Nexus Prover (Testnet 2)  with Single Line Command ⚡️
+# ⚡️Simple Guided to Run Nexus Prover CLI (Testnet 2)  ⚡️
 
 ### Pre requirements 
 1. Any ubuntu terminal (VPS / Wsl)
