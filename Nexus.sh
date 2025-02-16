@@ -30,7 +30,7 @@ warning() { printf "${BOLD}${YELLOW}[WARNING]${NC} %s\n" "$1"; }
 
 # Display Nexus logo
 fetch_logo() {
-    info "Fetching Nexus logo..."
+    #info "Fetching Nexus logo..."
     curl -sSf https://raw.githubusercontent.com/arun993/nexus_prover/main/logo.sh | bash
     sleep 3
 }
