@@ -111,13 +111,13 @@ setup_prover_id() {
 # Repository management
 manage_repository() {
     info "Managing Nexus repository..."
-    if [[ -d "${REPO_PATH}" ]]; then
-        warning "Repository exists. Updating..."
-        (cd "${REPO_PATH}" && git stash save "Script update $(date)" && git pull --ff-only)
-    else
-        info "Cloning repository..."
-        git clone "${REPO_URL}" "${REPO_PATH}"
-    fi
+   if [ -d "$REPO_PATH" ]; then
+   echo "$REPO_PATH exists. Updating.";
+   (cd $REPO_PATH && git stash save && git fetch --tags)
+   else
+   (cd $NEXUS_HOME && git clone https://github.com/nexus-xyz/network-api)
+   fi
+   (cd $REPO_PATH && git -c advice.detachedHead=false checkout $(git rev-list --tags --max-count=1))
     
     info "Checking out latest release..."
     (cd "${REPO_PATH}" && \
@@ -136,8 +136,8 @@ main() {
     manage_repository
     
     info "Starting prover service..."
-    (cd "${REPO_PATH}/clients/cli" && \
-     cargo run --release --bin prover -- "${ORCHESTRATOR_URL}")
+    (cd $REPO_PATH/clients/cli && cargo run --release --bin prover -- beta.orchestrator.nexus.xyz)
+
 }
 
 main "$@"
