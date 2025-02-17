@@ -20,8 +20,8 @@ NC='\033[0m' # No Color
 REQUIRED_PKGS=("build-essential" "pkg-config" "libssl-dev" "git" "protobuf-compiler")
 
 # Initialize logging
-LOG_FILE="${NEXUS_HOME}/installation.log"
-exec > >(tee -a "${LOG_FILE}") 2>&1
+#LOG_FILE="${NEXUS_HOME}/installation.log"
+#exec > >(tee -a "${LOG_FILE}") 2>&1
 
 # Display formatted messages
 info() { printf "${BOLD}${BLUE}[INFO]${NC} %s\n" "$1"; }
