@@ -12,11 +12,12 @@ sudo apt update && sudo apt install screen -y && screen -S nexus
 ```
 2. Run using one of the following commands :
 ```
-[ -f "nexus.sh" ] && rm nexus.sh; wget -q https://raw.githubusercontent.com/arun993/nexus_prover/refs/heads/main/Nexus.sh && chmod +x Nexus.sh && ./Nexus.sh
+[ -f "Nexus.sh" ] && rm -rf Nexus.sh; wget -q https://raw.githubusercontent.com/arun993/nexus_prover/refs/heads/main/Nexus.sh && chmod +x Nexus.sh && ./Nexus.sh
+
 ```
  OR           
 ```
-[ -f "nexus.sh" ] && rm nexus.sh; curl -sSf https://raw.githubusercontent.com/arun993/nexus_prover/refs/heads/main/Nexus.sh -o Nexus.sh && chmod +x Nexus.sh && ./Nexus.sh
+[ -f "Nexus.sh" ] && rm -rf Nexus.sh; curl -sSf https://raw.githubusercontent.com/arun993/nexus_prover/refs/heads/main/Nexus.sh -o Nexus.sh && chmod +x Nexus.sh && ./Nexus.sh
 ```
 **🚨It can take upto 15 Minutes to start till than grab a coffee!
 
