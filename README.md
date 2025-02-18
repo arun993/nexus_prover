@@ -7,6 +7,7 @@
 1. You need an Ubuntu VPS or Wsl (I recommand VPS)
 2. There is no min. system requiremet but i recommand 4GB RAM and 4 cores CPU min. (The higher your speces the more points you will get per second)
 3. Extract your Nexus Prover ID
+4. You can add Nexus Testnet uusing this link : https://hub.nexus.xyz/
 
 ### 👉Open your terminal and follow these steps : 
 1. Install Screen 
