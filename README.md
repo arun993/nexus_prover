@@ -10,7 +10,7 @@
 4. (Optional) Also you can add Nexus Testnet and get $NEX faucet using this link : https://hub.nexus.xyz/
 
 ### 👉Open your terminal and follow these steps : 
-1. Install Screen 
+1. Install and Attach Screen :
 ```
 sudo apt update && sudo apt install screen -y && screen -S nexus
 ```
