@@ -24,7 +24,7 @@ sudo apt update && sudo apt install screen -y && screen -S nexus
 ```
 **🚨It can take upto 15 Minutes to start till than grab a coffee!
 
-3. Press ```Ctrl+A+D``` To exit and don't press ctrl+C ❌
+3. After it starts Press ```Ctrl+A+D``` To exit and don't press ctrl+C ❌
 4. You can check logs by connecting screen again ``` screen -r nexus``` 
 
 :) Follow me on X for more guides : https://x.com/Arun__993  Thanks !!
