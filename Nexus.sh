@@ -131,7 +131,7 @@ main() {
     system_setup
     install_rust
     create_nexus_dir
-    check_terms_agreement
+    #check_terms_agreement
     setup_prover_id
     manage_repository
     
